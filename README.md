@@ -1,4 +1,4 @@
-# is-cannonical-base64
+# is-canonical-base64
 
 a regular expression to test wether a string is a valid base64,
 without ambiguity.

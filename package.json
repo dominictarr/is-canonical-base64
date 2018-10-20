@@ -1,11 +1,11 @@
 {
-  "name": "is-cannonical-base64",
+  "name": "is-canonical-base64",
   "description": "",
   "version": "1.0.0",
-  "homepage": "https://github.com/dominictarr/is-cannonical-base64",
+  "homepage": "https://github.com/dominictarr/is-canonical-base64",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/is-cannonical-base64.git"
+    "url": "git://github.com/dominictarr/is-canonical-base64.git"
   },
   "dependencies": {},
   "devDependencies": {
