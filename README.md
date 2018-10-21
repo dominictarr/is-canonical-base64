@@ -3,6 +3,11 @@
 a regular expression to test wether a string is a valid base64,
 without ambiguity.
 
+***note*** npm has implemented a (badly working) spam filter which disallowed me to publish
+`is-canonical-base64` so this is published as `reversable-base64` and `canonical-base64`
+(I'd much prefer `is-` at the start however, because the purpose of this module is a boolean
+test. And "is" turns it into a yes/no name)
+
 Base64 encodes bytes (base 256, 8 bits each) as chars each representing
 6 bits. That means a one byte buffer necessarily becomes 2 chars,
 except only the top 2 bits of the last char are used (and the string
@@ -17,6 +22,21 @@ signs base64, you must retain exactly the encoded representation
 (including any ambiguity). So, it's good to enforce that ambigious
 representations are rejected.
 
+## usage
+
+simple
+
+```
+var isCanonicalBase64 = require('canonical-base64')() //note, returns a function
+isCanonicalBase64.test(string)
+```
+
+advanced: you may pass in a prefix and suffix, which is combined into the regular expression.
+
+```
+var isCanonicalBase64 = require('canonical-base64')('@', '(?:\.ed25519)')
+isCanonicalBase64.test(string)
+```
 
 ## License
 
