@@ -1,5 +1,5 @@
 {
-  "name": "is-canonical-base64",
+  "name": "canonical-base64",
   "description": "",
   "version": "1.0.0",
   "homepage": "https://github.com/dominictarr/is-canonical-base64",
