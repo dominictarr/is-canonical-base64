@@ -1,7 +1,7 @@
 {
   "name": "is-canonical-base64",
   "description": "test wether a base64 string will serialize the same after parsing",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/dominictarr/is-canonical-base64",
   "repository": {
     "type": "git",
